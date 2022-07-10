@@ -1,0 +1,36 @@
+Flujo básico de Git
+
+*Puedes trabajar con repositorios locales y remotos.
+
+git init  	- iniciar el repocitorio.
+git clone 	- Se clona el repo de un peoyecto.
+git add		- añado al Stagin Area .
+git commit	- añado comenatario diciendo que cambios hice.
+
+Se trabaja de una forma básica donde está Master (IMPORTANTE) y rama Dev en
+donde se hacen actualizaciones con "merge" aquí se checan los cambios, todo
+esto en Dev, ya cuanto todo terminó, Master se actualiza y se manda a producción.
+
+ls - Al iniciar Git escribir "ls" para lista de directorios.
+pwd - para saber en que carpeta estamos.
+
+
+/*
+
+cd desktop
+cd repositorio
+git clone https://github.com/Daniel-Soto32/Estudio.git 
+cd Estudio
+git branch editar
+git checkout editar 
+ #Entramos a un branch donde lo que se edita no se puede hacer push, solo merge con Main
+ #y despues el push.
+ #Hacemos nuestros cambios, añadimos con
+git add -A/--all/. #o el nombre del archivo editado
+git status
+git commit -m" mensaje"
+git checkout main
+git merge editar
+git push
+
+*/
